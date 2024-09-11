@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    color: black;
+    transition: .3s;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+}
+:root{
+    --h1: 5rem;
+    --h2: 3.1rem;
+    --p: 1rem;
+    --box-shadow: 0px 0px 20px 5px #f6946d67;
+    --main: #FAF6EB;
+    --secondary: #F6946D;
+    --text: #000;
+    --button: #F6946D;
+    --span: #F6946D;
+
+}
+body{
+    width: 100%;
+    background: var(--main);
+    overflow-x: hidden;
+}
+.header{
+    padding: 10px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+span{
+    color: var(--span);
+    text-transform: uppercase;
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    font-size: var(--p);
+    font-weight: 500;
+    margin: 10px 15px;
+}
+.menu li a:hover{
+    color: var(--secondary);
+}
+.order-btn .btn{
+    background-color: var(--button);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid var(--button);
+    font-size: 15px;
+    font-weight: 500;
+}
+.order-btn .btn:hover{
+    background-color: var(--button);
+    border: 2px solid var(--button);
+    box-shadow: var(--box-shadow);
+}
+section{
+    padding: 70px 9% 60px;
+}
+.home{
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.home-content h1{
+    font-size: var(--h1);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.home-content p{
+    font-size: var(--p);
+    font-weight: 500;
+    max-width: 450px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+.home-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn1{
+    background-color: var(--button);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid var(--button);
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn1:hover{
+    box-shadow: var(--box-shadow);
+}
+.btn2{
+    background-color: transparent;
+    padding: 10px 25px;
+    color: black;
+    border-radius: 50px;
+    border: 2px solid var(--button);
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn2:hover{
+    background-color: var(--button);
+    border: 2px solid var(--button);
+    color: white;
+    box-shadow: var(--box-shadow);
+}
+.home-img img {
+    width: 100%;
+}
+/* .home-img img{
+    width: 100%;
+    height: auto;
+} */
+.category{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.about-img img{
+    width: 100%;
+}
+.about-content h4{
+    color: var(--secondary);
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase
+}
+.about-content h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.about-content p{
+    font-size: var(--p);
+    font-weight: 500;
+    padding-bottom: 10px;
+    line-height: 22px;
+}
+.about-work{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.about-work .row{
+    background: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.about-work .row h2{
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.about-work .row h4{
+    font-size: var(--p);
+    color: var(--text);
+}
+
+
+/* ---------------------------------------- */
+.destination .des-title h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.destination .des-title p {
+    font-size: var(--p);
+    padding-bottom: 20px;
+    max-width: 450px;
+    line-height: 21px;
+}
+.des-main{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.des-main .row{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
+.des-main .row img{
+    width: 100%;
+    border-radius: 20px;
+}
+.des-main .row h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.des-main .row p{
+    font-size: var(--p);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.des-main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.des-main-row h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+.des-main-row a.btn{
+    font-size: 15px;
+    background-color: var(--button);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 50px;
+}
+.des-main-row a.btn:hover {
+    background-color: var(--button);
+    box-shadow: var(--box-shadow);
+}
+.testimonial{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.tes-img img{
+    width: 100%;
+}
+.tes-content{
+    padding: 10px 20px;
+}
+.tes-content h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.tes-content .row{
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tes-content .row p{
+    font-size: var(--p);
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+.tes-content .row .star{
+    font-size: var(--p);
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+.tes-content .row h2{
+    font-size: 30px;
+}
+.tes-content .row h4{
+    font-size: var(--p);
+    padding-bottom: 10px;
+    margin-top: -10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+.book-container{
+    background: #FFD27F;
+    padding: 50px 0px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.book-title h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.book-title p{
+    font-size: var(--p);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.book-form{
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+form input{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.btn3{
+    cursor: pointer;
+    background-color: #000000;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
